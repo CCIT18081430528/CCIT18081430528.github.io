@@ -5,15 +5,26 @@
   
 
   
-  <title>blue | Hexo</title>
+  <title>Beacon | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="blue">
+  <meta name="description" content="STM32Cube Mx蓝牙功能的相关配置一、打开STM32Cube Mx蓝牙功能的相关配置 进入页面，在最上方的help中打开Manage embedded software packages，下载STM32F4型号1.24.1版本的固件包，然后再进入STMicroelectronics，下载X_CUBU_BLE1里的最新版本固件包（4.4.0）和X_CUBU_MEMS1的6.2.0固件包。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Beacon">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;06&#x2F;blue&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="STM32Cube Mx蓝牙功能的相关配置一、打开STM32Cube Mx蓝牙功能的相关配置 进入页面，在最上方的help中打开Manage embedded software packages，下载STM32F4型号1.24.1版本的固件包，然后再进入STMicroelectronics，下载X_CUBU_BLE1里的最新版本固件包（4.4.0）和X_CUBU_MEMS1的6.2.0固件包。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-06T09:44:20.055Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;.com&#x2F;&#x2F;D:%5Cblog%5Csource_posts%5Cblue%5C1.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;.com&#x2F;&#x2F;D:%5Cblog%5Csource_posts%5Cblue%5C2.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;.com&#x2F;&#x2F;D:%5Cblog%5Csource_posts%5Cblue%5C3.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;.com&#x2F;&#x2F;D:%5Cblog%5Csource_posts%5Cblue%5C4.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;.com&#x2F;&#x2F;D:%5Cblog%5Csource_posts%5Cblue%5C5.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;.com&#x2F;&#x2F;D:%5Cblog%5Csource_posts%5Cblue%5C6.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;.com&#x2F;&#x2F;D:%5Cblog%5Csource_posts%5Cblue%5C7.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;.com&#x2F;&#x2F;D:%5Cblog%5Csource_posts%5Cblue%5C8.png">
+<meta property="og:updated_time" content="2019-11-06T11:19:11.055Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;.com&#x2F;&#x2F;D:%5Cblog%5Csource_posts%5Cblue%5C1.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -74,7 +85,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      blue
+      Beacon
     </h1>
   
 
@@ -82,11 +93,26 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="STM32Cube-Mx蓝牙功能的相关配置"><a href="#STM32Cube-Mx蓝牙功能的相关配置" class="headerlink" title="STM32Cube Mx蓝牙功能的相关配置"></a>STM32Cube Mx蓝牙功能的相关配置</h2><h3 id="一、打开STM32Cube-Mx蓝牙功能的相关配置"><a href="#一、打开STM32Cube-Mx蓝牙功能的相关配置" class="headerlink" title="一、打开STM32Cube Mx蓝牙功能的相关配置"></a>一、<em>打开STM32Cube Mx蓝牙功能的相关配置</em></h3><p> 进入页面，在最上方的help中打开Manage embedded software packages，下载STM32F4型号1.24.1版本的固件包，然后再进入STMicroelectronics，下载X_CUBU_BLE1里的最新版本固件包（4.4.0）和X_CUBU_MEMS1的6.2.0固件包。 </p>
+<h3 id="二、选择芯片"><a href="#二、选择芯片" class="headerlink" title="二、选择芯片"></a>二、<em>选择芯片</em></h3><p> 点击File里的New Project，进入后在左上方可搜索所需要的芯片型号，大家可根据自己的需要进行选择，我们这里用的是STM32F401RETx。 </p>
+<h3 id="三、芯片的配置"><a href="#三、芯片的配置" class="headerlink" title="三、芯片的配置"></a>三、<em>芯片的配置</em></h3><p> 1.点击Clock Configuration下方的Additional Software，按下图所示进行配置，设置完后点右下方的OK确定。 </p>
+<p><img src="/.com//D:%5Cblog%5Csource_posts%5Cblue%5C1.png" alt><br><img src="/.com//D:%5Cblog%5Csource_posts%5Cblue%5C2.png" alt></p>
+<p>2.在System Core的SYS中进行配置</p>
+<p><img src="/.com//D:%5Cblog%5Csource_posts%5Cblue%5C3.png" alt></p>
+<p>3.在Connectivity中配置全双工模式和串口的异步通行模式。把SPI1里的Mode的模式改为Full_Duplex Master(全双工模式)，并在其下方的Parameter Settings里配置时钟数</p>
+<p><img src="/.com//D:%5Cblog%5Csource_posts%5Cblue%5C4.png" alt></p>
+<p>在USART1的Mode里选择Asynchronous(异步模式)</p>
+<p><img src="/.com//D:%5Cblog%5Csource_posts%5Cblue%5C5.png" alt></p>
+<p>4.在左下角点击Additional Software，进入STMicroelectronics.X_CUBU_BLE1.4.4.0</p>
+<p><img src="/.com//D:%5Cblog%5Csource_posts%5Cblue%5C6.png" alt></p>
+<p>5.选择芯片上方的System view里的GPIO</p>
+<p><img src="/.com//D:%5Cblog%5Csource_posts%5Cblue%5C7.png" alt></p>
+<h3 id="四、进入工程"><a href="#四、进入工程" class="headerlink" title="四、进入工程"></a>四、<em>进入工程</em></h3><p>在Project Manager里设置文件名，文件位置（工程名和 工程存储路径不要用中文，不然容易出错），最后点GENERATE CODE进入工程。<br><img src="/.com//D:%5Cblog%5Csource_posts%5Cblue%5C8.png" alt></p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/11/06/blue/" data-id="ck2n67pd3000078w9gx2zh7y1" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/11/06/blue/" data-id="ck2n6wgb90000n4w9evg463rk" class="article-share-link">Share</a>
       
       
     </footer>
@@ -135,7 +161,7 @@
       <ul>
         
           <li>
-            <a href="/2019/11/06/blue/">blue</a>
+            <a href="/2019/11/06/blue/">Beacon</a>
           </li>
         
           <li>
