@@ -76,27 +76,27 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://ccit18081430528.github.io/2019/11/06/blue/" data-id="ck2o6okrc0001dow99g9ddqg0" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://ccit18081430528.github.io/2019/11/06/blue/" data-id="ck2o9xcdm0000d8w931i3duey" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
     <div class="entry-content">
       
-        <h1 id="STM32Cube-Mx蓝牙功能的相关配置"><a href="#STM32Cube-Mx蓝牙功能的相关配置" class="headerlink" title="STM32Cube Mx蓝牙功能的相关配置"></a>STM32Cube Mx蓝牙功能的相关配置</h1><h3 id="一、打开STM32Cube-Mx蓝牙功能的相关配置"><a href="#一、打开STM32Cube-Mx蓝牙功能的相关配置" class="headerlink" title="一、打开STM32Cube Mx蓝牙功能的相关配置"></a>一、<em>打开STM32Cube Mx蓝牙功能的相关配置</em></h3><p> 进入页面，在最上方的help中打开Manage embedded software packages，下载STM32F4型号1.24.1版本的固件包，然后再进入STMicroelectronics，下载X_CUBU_BLE1里的最新版本固件包（4.4.0）和X_CUBU_MEMS1的6.2.0固件包。 </p>
-<h3 id="二、选择芯片"><a href="#二、选择芯片" class="headerlink" title="二、选择芯片"></a>二、<em>选择芯片</em></h3><p> 点击File里的New Project，进入后在左上方可搜索所需要的芯片型号，大家可根据自己的需要进行选择，我们这里用的是STM32F401RETx。 </p>
-<h3 id="三、芯片的配置"><a href="#三、芯片的配置" class="headerlink" title="三、芯片的配置"></a>三、<em>芯片的配置</em></h3><p> 1.<em>点击Clock Configuration下方的Additional Software，按下图所示进行配置，设置完后点右下方的OK确定。</em> </p>
+        <h1 id="STM32Cube-Mx蓝牙功能的相关配置"><a href="#STM32Cube-Mx蓝牙功能的相关配置" class="headerlink" title="STM32Cube Mx蓝牙功能的相关配置"></a>STM32Cube Mx蓝牙功能的相关配置</h1><h3 id="一、打开STM32Cube-Mx蓝牙功能的相关配置"><a href="#一、打开STM32Cube-Mx蓝牙功能的相关配置" class="headerlink" title="一、打开STM32Cube Mx蓝牙功能的相关配置"></a>一、<em>打开STM32Cube Mx蓝牙功能的相关配置</em></h3><p> <em>进入页面，在最上方的help中打开Manage embedded software packages，下载STM32F4型号1.24.1版本的固件包，然后再进入STMicroelectronics，下载X_CUBU_BLE1里的最新版本固件包（4.4.0）和X_CUBU_MEMS1的6.2.0固件包。</em></p>
+<h3 id="二、选择芯片"><a href="#二、选择芯片" class="headerlink" title="二、选择芯片"></a>二、<em>选择芯片</em></h3><p> <em>点击File里的New Project，进入后在左上方可搜索所需要的芯片型号，大家可根据自己的需要进行选择，我们这里用的是STM32F401RETx。</em> </p>
+<h3 id="三、芯片的配置"><a href="#三、芯片的配置" class="headerlink" title="三、芯片的配置"></a>三、<em>芯片的配置</em></h3><p> 1.<strong>点击Clock Configuration下方的Additional Software，按下图所示进行配置，设置完后点右下方的OK确定。</strong> </p>
 <p><img src="https://ccit18081430501.github.io/2019/11/06/Beacon/1.png" alt><br><img src="https://ccit18081430501.github.io/2019/11/06/Beacon/2.png" alt></p>
-<p>2.<em>在System Core的SYS中进行配置</em></p>
+<p>2.<strong>在System Core的SYS中进行配置</strong></p>
 <p><img src="https://ccit18081430501.github.io/2019/11/06/Beacon/3.png" alt></p>
-<p>3.<em>在Connectivity中配置全双工模式和串口的异步通行模式。把SPI1里的Mode的模式改为Full_Duplex Master(全双工模式)，并在其下方的Parameter Settings里配置时钟数</em></p>
+<p>3.<strong>在Connectivity中配置全双工模式和串口的异步通行模式。把SPI1里的Mode的模式改为Full_Duplex Master(全双工模式)，并在其下方的Parameter Settings里配置时钟数</strong></p>
 <p><img src="https://ccit18081430501.github.io/2019/11/06/Beacon/4.png" alt></p>
-<p>在USART1的Mode里选择Asynchronous(异步模式)</p>
+<p><em>在USART1的Mode里选择Asynchronous(异步模式)</em></p>
 <p><img src="https://ccit18081430501.github.io/2019/11/06/Beacon/5.png" alt></p>
-<p>4.<em>在左下角点击Additional Software，进入STMicroelectronics.X_CUBU_BLE1.4.4.0</em></p>
+<p>4.<strong>在左下角点击Additional Software，进入STMicroelectronics.X_CUBU_BLE1.4.4.0</strong></p>
 <p><img src="https://ccit18081430501.github.io/2019/11/06/Beacon/6.png" alt></p>
-<p>5.<em>选择芯片上方的System view里的GPIO</em></p>
+<p>5.<strong>选择芯片上方的System view里的GPIO</strong></p>
 <p><img src="https://ccit18081430501.github.io/2019/11/06/Beacon/7.png" alt></p>
-<h3 id="四、进入工程"><a href="#四、进入工程" class="headerlink" title="四、进入工程"></a>四、<em>进入工程</em></h3><p>在Project Manager里设置文件名，文件位置（工程名和 工程存储路径不要用中文，不然容易出错），最后点GENERATE CODE进入工程。</p>
+<h3 id="四、进入工程"><a href="#四、进入工程" class="headerlink" title="四、进入工程"></a>四、<em>进入工程</em></h3><p><em>在Project Manager里设置文件名，文件位置（工程名和 工程存储路径不要用中文，不然容易出错），最后点GENERATE CODE进入工程。</em></p>
 <p><img src="https://ccit18081430501.github.io/2019/11/06/Beacon/8.png" alt></p>
 
       
@@ -134,7 +134,7 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://ccit18081430528.github.io/2019/11/06/dajian/" data-id="ck2o6okrg0003dow9bmciardw" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://ccit18081430528.github.io/2019/11/06/dajian/" data-id="ck2o9xce20001d8w97ljvbm2c" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -181,7 +181,7 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://ccit18081430528.github.io/2019/10/17/helloccit/" data-id="ck2o6okrf0002dow90s41602x" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://ccit18081430528.github.io/2019/10/17/helloccit/" data-id="ck2o9xces0002d8w91wk2gvet" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -224,7 +224,7 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://ccit18081430528.github.io/2019/10/17/hello-world/" data-id="ck2o6okr60000dow9ctcxfwmi" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://ccit18081430528.github.io/2019/10/17/hello-world/" data-id="ck2o9xcet0003d8w9enyyca7s" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
